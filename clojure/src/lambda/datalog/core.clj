@@ -1,6 +1,5 @@
 (ns datalog.core
-  (:require [datascript.core :as ds]
-            [datascript.db :as ds.db]))
+  (:require [datascript.core :as ds]))
 
 (def schema {:parents {:db/cardinality :db.cardinality/many}})
 
@@ -58,7 +57,7 @@
 
 ;; Who are Charlie's parents?
 (ds/q
- '[:find ?p
+ '[:find [?p ...]
    :in $ % ?c
    :where (parent ?p ?c)]
  db rules "charlie")
