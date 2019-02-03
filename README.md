@@ -1,6 +1,6 @@
 # Datalog
 
-The code and links from talk about Datalog at [Lambda-Stuttgart
+The code and links from the talk about Datalog at [Lambda-Stuttgart
 meetup][0].
 
 ## Links
